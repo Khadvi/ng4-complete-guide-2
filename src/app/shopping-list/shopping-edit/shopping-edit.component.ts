@@ -1,11 +1,16 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-shopping-edit',
-  standalone: false,
   templateUrl: './shopping-edit.component.html',
-  styleUrl: './shopping-edit.component.css'
+  styleUrls: ['./shopping-edit.component.css'],
+  standalone: false
 })
-export class ShoppingEditComponent {
+export class ShoppingEditComponent implements OnInit {
+
+  constructor() { }
+
+  ngOnInit() {
+  }
 
 }
