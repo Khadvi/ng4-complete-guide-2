@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
   standalone: false
 })
 export class AppComponent {
+
+  currentTab = 'recipe';
+  
+  getCurrentTab(d:string) {
+    this.currentTab = d;
+  }
 }
