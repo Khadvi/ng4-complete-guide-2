@@ -7,10 +7,9 @@ import { Component } from '@angular/core';
   standalone: false
 })
 export class AppComponent {
+  loadedFeature = 'recipe';
 
-  currentTab = 'recipe';
-  
-  getCurrentTab(d:string) {
-    this.currentTab = d;
+  onNavigate(feature: string) {
+    this.loadedFeature = feature;
   }
 }
